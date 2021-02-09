@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 2</title>
+</head>
+<body>
+	<form action="http://www.iesjacarandabrenes.org/lmsgi/resultado.php" method="post">
+		<h1 align="center" style="font-family: Georgia">CURSOS ONLINE</h1>
+		<p align="center" style="font-family: serif"><b>Formulario de registro</b></p>
+		<fieldset style="font-family: arial">
+			<legend style="font-weight: bold">¿QUIÉN ERES?</legend>
+				<br>
+				<p><b>Nombre</b></p>
+				<input type="text" style="background-color:red"><br>
+				<p><b>Apellidos</b></p>
+				<input type="text"><br>
+				<p><b>Correo electrónico</b></p>
+				<input type="text"><br>
+				<p><b>Fecha de nacimiento</b></p>
+				<select>
+					 <option>Día</option>
+					 <option value="1">1</option> 
+				</select>
+				<select>
+					 <option>Mes</option>
+					 <option value="01">Enero</option> 
+				</select>
+				<select>
+					 <option>Año</option>
+					 <option value="2018">2018</option> 
+				</select>
+			<br><br>
+			</fieldset>
+
+			<fieldset style="font-family: arial">
+				<legend style="font-weight: bold">¿DE DÓNDE ERES?</legend>
+					<br>
+					<p><b>Ciudad</b></p>
+					<input type="text" name="ciudad">
+					<br>
+					<p><b>Código postal</b></p>
+					<input type="text" name="cp"><br>
+					<p><b>País</b></p>
+					<select name="pais">
+						<option>País</option>
+						<option>País2</option>
+					</select>
+			</fieldset>
+
+			<fieldset style="font-family: arial">
+				<legend style="font-weight: bold">¿CÓMO QUIERES INICIAR SESIÓN?</legend>
+					<br>
+					<p><b>Nombre de usuario</b></p>
+					<input type="text" name="nombre_usu">
+					<br>
+					<p><b>Contraseña</b></p>
+					<input type="password" name="contrasenya"><br>
+					<p><b>Vuelve a escribir la contraseña</b><br>
+					<input type="password" name="contrasenya"><br><br>
+			</fieldset>
+
+			<fieldset style="font-family: arial">
+				<legend style="font-weight: bold">CONDICIONES DE REGISTRO</legend>
+				<br>
+				Deseo recibir ofertas
+				<br>
+				<input type="radio" name="ofertas" id="ofertas1">Una vez al día 
+				<input type="radio" name="ofertas">Una vez a la semana 
+				<input type="radio" name="ofertas">Una vez al mes
+				<br><br>
+				<input type="checkbox" name="acepto" id="acepto">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies
+				<br>
+			</fieldset>
+			<br>
+			<p align="center" style="font-family: arial"><input type="submit" value="Crear cuenta"></p>
+	</form>
+</body>
+</html>

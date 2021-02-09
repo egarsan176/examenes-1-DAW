@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>Ejercicio 1</title>
+</head>
+<body>
+<form action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="post">
+	<h2>Industrias ACME</h2>
+
+	<fieldset> 
+
+		<legend>FORMULARIO DE PEDIDO</legend>
+			<b>Paso 1. Identificación</b>
+			<fieldset>
+				<legend>Datos del cliente</legend>
+				<br>
+				Correo Electrónico
+				<input type="email" name="correo" :valid>
+				<br>
+				Contraseña
+				<input type="text" name="contraseña" maxlength="6">
+				<br>
+				(Longitud máxima 6 caracteres)
+			</fieldset>
+			<fieldset>
+				<legend>Tipo de cliente</legend>
+				<input type="radio" checked>Particular<br>
+				<input type="radio">Asociación<br>
+				<input type="radio">Empresa<br>
+			</fieldset>
+			<br>
+			<b>Paso 2. Pedido</b>
+			<br>
+			<fieldset>
+				<br>
+		
+				<legend>Datos del Producto</legend>
+				<big>Producto</big>
+				<br>
+				<select name="Producto" multiple size="8">
+				
+					<option><b>Armaduras</b></option>
+        			<option>&nbsp;&nbsp;&nbsp;AR001 Oro Reluciente</option>
+        			<option>&nbsp;&nbsp;&nbsp;AR002 Plata pulida</option>
+        			<option>&nbsp;&nbsp;&nbsp;AR003 Bronce reforzado</option>
+
+        			<option><b>Extras</b></option>
+        			<option>&nbsp;&nbsp;&nbsp;EX001 Escudo</option>
+        			<option>&nbsp;&nbsp;&nbsp;EX002 Invisivilidad</option>
+      			</select>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Información de interés</legend>
+				Comentarios<br>
+				<textarea name="comentarios" rows="6" cols="50"></textarea><br>
+				<input type="checkbox" checked>&nbsp;Acepto recibir información publicitaria
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>Datos de envío</legend>
+				<br>
+				Dirección
+				<input type="text" name="direccion"><br>
+				Ciudad
+				<input type="text" name="ciudad">
+				Código postal
+				<input type="text" name="cp" maxlength="5"><br>
+			</fieldset>
+		<br>
+		<p align="left"><button type="submit" onclick="">ENVIAR PEDIDO</button></p>
+		<p align="right"><button type="reset">RESET</button></p>
+	</fieldset>
+</form>
+</body>
+</html>
